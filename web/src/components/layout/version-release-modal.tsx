@@ -25,18 +25,7 @@ export function VersionReleaseModal({ className, style }: VersionReleaseModalPro
 
     return (
         <>
-            {/* <button
-                type="button"
-                className={className || "shrink-0 cursor-pointer text-xs font-medium text-stone-500 transition hover:text-stone-950 dark:text-stone-400 dark:hover:text-white"}
-                style={style}
-                onClick={openReleaseModal}
-                title="查看版本更新"
-            >
-                <span className="relative inline-flex">
-                    {APP_VERSION}
-                    {hasNewVersion ? <span className="absolute -right-1.5 -top-1 size-1.5 rounded-full bg-green-500" /> : null}
-                </span>
-            </button> */}
+          
             <Modal title="版本更新" open={open} width={680} centered footer={null} onCancel={() => setOpen(false)}>
                 <div className="mb-5 grid grid-cols-2 gap-3">
                     <div className="rounded-lg border border-stone-200 p-3 dark:border-stone-800">
